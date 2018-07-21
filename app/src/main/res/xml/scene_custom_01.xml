@@ -27,6 +27,20 @@
         motion:dragDirection="dragRight"
         motion:touchAnchorId="@id/target"
         motion:touchAnchorSide="bottom"/>
+
+    <KeyFrameSet>
+      <KeyAttribute
+          android:rotation="0"
+          motion:framePosition="1"
+          motion:target="@id/target"/>
+      <KeyPosition
+          motion:framePosition="27"
+          motion:percentX="0.25"
+          motion:percentY="0.8"
+          motion:target="@id/target"
+          motion:type="deltaRelative"/>
+    </KeyFrameSet>
+
   </Transition>
 
   <ConstraintSet
@@ -36,8 +50,12 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         motion:layout_constraintBottom_toBottomOf="parent"
-        motion:layout_constraintRight_toRightOf="parent"
-        tools:ignore="DuplicateIds"/>
+        motion:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="DuplicateIds">
+      <CustomAttribute
+          motion:attributeName="backgroundColor"
+          motion:customColorValue="@color/colorAccent"/>
+    </Constraint>
   </ConstraintSet>
 
   <ConstraintSet
@@ -48,6 +66,10 @@
         android:layout_height="50dp"
         motion:layout_constraintLeft_toLeftOf="parent"
         motion:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateIds"/>
+        tools:ignore="DuplicateIds">
+      <CustomAttribute
+          motion:attributeName="backgroundColor"
+          motion:customColorValue="@color/colorPrimary"/>
+    </Constraint>
   </ConstraintSet>
 </MotionScene>

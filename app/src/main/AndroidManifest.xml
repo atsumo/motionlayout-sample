@@ -9,9 +9,12 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity
-        android:name=".Sample1Activity"
-        >
+    <activity android:name=".Sample1Activity">
+    </activity>
+    <activity android:name=".SampleKeyFrameActivity">
+
+    </activity>
+    <activity android:name=".SampleCustomAttributeActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -19,5 +22,4 @@
       </intent-filter>
     </activity>
   </application>
-
 </manifest>
