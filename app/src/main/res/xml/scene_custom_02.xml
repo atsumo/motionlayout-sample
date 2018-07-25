@@ -31,14 +31,12 @@
     <KeyFrameSet>
       <KeyAttribute
           android:rotation="0"
-          motion:framePosition="1"
-          motion:target="@id/target"/>
-      <KeyPosition
-          motion:framePosition="27"
-          motion:percentX="0.25"
-          motion:percentY="0.8"
-          motion:target="@id/target"
-          motion:type="deltaRelative"/>
+          motion:framePosition="80"
+          motion:target="@id/target">
+        <CustomAttribute
+            motion:attributeName="Crossfade"
+            motion:customFloatValue="0.2"/>
+      </KeyAttribute>
     </KeyFrameSet>
 
   </Transition>
