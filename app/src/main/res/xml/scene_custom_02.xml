@@ -28,16 +28,16 @@
         motion:touchAnchorId="@id/target"
         motion:touchAnchorSide="bottom"/>
 
-    <KeyFrameSet>
-      <KeyAttribute
-          android:rotation="0"
-          motion:framePosition="80"
-          motion:target="@id/target">
-        <CustomAttribute
-            motion:attributeName="Crossfade"
-            motion:customFloatValue="0.2"/>
-      </KeyAttribute>
-    </KeyFrameSet>
+    <!--<KeyFrameSet>-->
+    <!--<KeyAttribute-->
+    <!--android:rotation="0"-->
+    <!--motion:framePosition="80"-->
+    <!--motion:target="@id/target">-->
+    <!--<CustomAttribute-->
+    <!--motion:attributeName="Crossfade"-->
+    <!--motion:customFloatValue="0.2"/>-->
+    <!--</KeyAttribute>-->
+    <!--</KeyFrameSet>-->
 
   </Transition>
 
